@@ -39,10 +39,54 @@
         font-size: 1.5rem;
         font-weight: 600;
       }
+
+      .button-5 {
+        width: 140px;
+        height: 50px;
+        border: 2px solid #34495e;
+        float: right;
+        text-align: center;
+        cursor: pointer;
+        position: relative;
+        box-sizing: border-box;
+        overflow: hidden;
+        margin: 0 0 40px 0;
+      }
+      .button-5 a {
+        font-family: arial;
+        font-size: 16px;
+        color: #34495e;
+        text-decoration: none;
+        line-height: 50px;
+        transition: all 0.5s ease;
+        z-index: 2;
+        position: relative;
+      }
+      .eff-5 {
+        width: 140px;
+        height: 50px;
+        left: -140px;
+        top: -50px;
+        background: #34495e;
+        position: absolute;
+        transition: all 0.5s ease;
+        z-index: 1;
+      }
+      .button-5:hover .eff-5 {
+        left: 0;
+        top: 0;
+      }
+      .button-5:hover a {
+        color: #fff;
+      }
     </style>
   </head>
 
-  <body>
+  <body
+    oncontextmenu="return false"
+    onselectstart="return false"
+    ondragstart="return false"
+  >
     <div class="container">
       <div class="info">
         <div class="logo_me">
@@ -64,23 +108,12 @@
           <li>
             Rails > 開発環境(Visual Studio Code), MVCパターン,掲示板(CRUD)
           </li>
+          <div class="button-5">
+            <div class="eff-5"></div>
+            <a href="#"> Go </a>
+          </div>
         </ul>
       </div>
     </div>
-
-    <!-- <h1>Dongmin Park</h1>
-    <img src="1.jpg" height="400" alt="face" title="face" />
-    <ul>
-      <li>東義大学校 卒業</li>
-      <li>
-        JavaベースのWeb開発者養成修了(6か月間)>(JAVA,Spring,Linux, Network,
-        HTML,CSS, JSP,Git Hub, Oracle DB, SQL)
-      </li>
-      <li>
-        JAVA > 開発環境 (Eclipse,java 1.8.0v, Servlet&jsp , Apache Tomcat ,
-        Maven, MyBatis,)
-      </li>
-      <li>Rails > 開発環境(Visual Studio Code), MVCパターン,掲示板(CRUD)</li>
-    </ul> -->
   </body>
 </html>
