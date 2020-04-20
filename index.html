@@ -33,14 +33,14 @@
         border: 1px solid transparent;
         border-radius: 10px;
         box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
-        margin: 3em auto;
+        margin: 3em auto 1em auto;
         padding: 1em 1em;
         color: #ffffff;
         font-size: 1.5rem;
         font-weight: 600;
       }
 
-      .button-5 {
+      .button-1 {
         width: 140px;
         height: 50px;
         border: 2px solid #34495e;
@@ -53,7 +53,7 @@
         overflow: hidden;
         margin: 0 0 40px 0;
       }
-      .button-5 a {
+      .button-1 a {
         font-family: arial;
         font-size: 16px;
         color: #34495e;
@@ -63,7 +63,7 @@
         z-index: 2;
         position: relative;
       }
-      .eff-5 {
+      .eff-1 {
         width: 140px;
         height: 50px;
         left: -140px;
@@ -73,12 +73,57 @@
         transition: all 0.5s ease;
         z-index: 1;
       }
-      .button-5:hover .eff-5 {
+      .button-1:hover .eff-1 {
         left: 0;
         top: 0;
       }
-      .button-5:hover a {
+      .button-1:hover a {
         color: #fff;
+      }
+
+      .button-2 {
+        width: 140px;
+        height: 50px;
+        border: 2px solid #34495e;
+        background: rgb(130, 130, 240);
+        float: right;
+        text-align: center;
+        cursor: pointer;
+        position: relative;
+        box-sizing: border-box;
+        overflow: hidden;
+        margin: 0 0 40px 0;
+      }
+      .button-2 a {
+        font-family: arial;
+        font-size: 16px;
+        color: #34495e;
+        text-decoration: none;
+        line-height: 50px;
+        transition: all 0.5s ease;
+        z-index: 2;
+        position: relative;
+      }
+      .eff-2 {
+        width: 140px;
+        height: 50px;
+        left: -140px;
+        top: -50px;
+        background: #34495e;
+        position: absolute;
+        transition: all 0.5s ease;
+        z-index: 1;
+      }
+      .button-2:hover .eff-2 {
+        left: 0;
+        top: 0;
+      }
+      .button-2:hover a {
+        color: #fff;
+      }
+
+      footer {
+        margin-top: 40%
       }
     </style>
   </head>
@@ -91,7 +136,7 @@
     <div class="container">
       <div class="info">
         <div class="logo_me">
-          <!-- <img src="1.jpg" height="400" alt="face" title="face" /> -->
+          <img src="1.jpg" height="400" alt="face" title="face" />
         </div>
         <h1>Dongmin Park</h1>
       </div>
@@ -102,6 +147,14 @@
             JavaベースのWeb開発者養成修了(6か月間)>(JAVA,Spring,Linux, Network,
             HTML,CSS, JSP,Git Hub, Oracle DB, SQL)
           </li>
+          <p><div class="button-2">
+            <div class="eff-2"></div>
+            <a href="https://github.com/dongmin0877/rails_blog" target="_blank">
+              Spring_Project
+            </a>
+          </div>
+        </p>
+        <br>
           <li>
             JAVA > 開発環境 (Eclipse,java 1.8.0v, Servlet&jsp , Apache Tomcat ,
             Maven, MyBatis,)
@@ -109,12 +162,19 @@
           <li>
             Rails > 開発環境(Visual Studio Code), MVCパターン,掲示板(CRUD)
           </li>
-          <div class="button-5">
-            <div class="eff-5"></div>
-            <a href="#"> Go </a>
+          <br />
+          <div class="button-1">
+            <div class="eff-1"></div>
+            <a href="https://github.com/dongmin0877/rails_blog" target="_blank">
+              Rails_blog
+            </a>
           </div>
         </ul>
       </div>
     </div>
   </body>
+  <footer>
+    <p>Copyright © 2020 All rights reserved.</p>
+    <address>Contact webmaster for more information. 070-3349-7966</address>
+  </footer>
 </html>
